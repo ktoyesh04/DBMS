@@ -1,3 +1,5 @@
+CREATE DATABASE SMS;
+USE SMS;
 CREATE TABLE Admin(
     aid varchar(10) PRIMARY KEY,
     aname varchar(20) NOT NULL,
