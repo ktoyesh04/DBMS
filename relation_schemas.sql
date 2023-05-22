@@ -1,7 +1,7 @@
 CREATE TABLE enrolled(
 cid VARCHAR(5) NOT NULL,
 sid VARCHAR(10) NOT NULL,
-attendence FLOAT ,
+attendence INT ,
 gpa FLOAT,
 CONSTRAINT e_pk PRIMARY KEY(cid, sid),
 CONSTRAINT e_fk_cid FOREIGN KEY(cid) REFERENCES course(cid) ON DELETE CASCADE,
