@@ -33,3 +33,16 @@ INSERT INTO admin values(2,'Hemanth Narayan','admin2',aes_encrypt('admin2','encr
 INSERT INTO admin values(3,'Sahya','admin3',aes_encrypt('admin3','encryption_key'));
 INSERT INTO admin values(4,'Toyesh','admin4',aes_encrypt('admin4','encryption_key'));
 INSERT INTO admin values(5,'Shivani','admin5',aes_encrypt('admin5','encryption_key'));
+
+Faculty.
+
+INSERT INTO faculty(fid,aid,fname,position) VALUES
+('101','1','Natalie Hughes','Professor'),
+('102','2','Benjamin Wright','Associate Professor'),
+('103','3','Ava Clark','Professor'),
+('104','4','Emily Blunt','Assistant Professor'),
+('105','5','Chris Smith','Associate Professor');
+
+Courses
+
+
