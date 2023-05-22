@@ -43,6 +43,5 @@ INSERT INTO faculty(fid,aid,fname,position) VALUES
 ('104','4','Emily Blunt','Assistant Professor'),
 ('105','5','Chris Smith','Associate Professor');
 
-Courses
 
 
