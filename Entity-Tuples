@@ -1,4 +1,4 @@
-Student table.
+-- Student table.
 
 insert into student(sid,aid,sname,gender,mail,phone,dob,address) values ('001','1','John Smith','M','john.smith@gmail.com',1234567890,'1998-5-10','123 Main street,SA,WA');
 insert into student values('002','1','Emily Johnson','F','emily.johnson@gmail.com',1234567889,'1999-09-15','456 Elm street SA,WA');
@@ -20,13 +20,23 @@ insert into student values('017','4','Jackson Martin','M','jackson.martin@gmail.
 insert into student values('018','4','Harper Roberts','F','harper.roberts@gmail.com',1667718888,'2001-08-08','654 cedar Aveneu,SA,WA');
 insert into student values('019','5','Oliver Walker','M','oliver.walker@gmail.com',1809997777,'1997-03-03','123 Oak Lane,SA,WA');
 insert into student values('020','5','William ','M','william.mitchell@gmail.com',1776663333,'1998-12-15','789 Elm Avenue,SA,WA');
-insert into student values('021','5','William Mitchell','M','william.mitchell@gmail.com',1776663333,'1998-12-15','789 Elm Avenue,SA,WA');
+insert into student values('021','5','William Mitchell','M','william.mitchel@gmail.com',1776663334,'1998-12-15','789 Elm Avenue,SA,WA');
 insert into student values('022','5','Grace Baker','F','garce.baker@gmail.com',1432225555,'2001-05-25','321 Pine Lane,SA,WA');
 insert into student values('023','5','Henry Taylor','M','henry.taylor@gmail.com',1007774444,'1999-07-07','654 Oak Road,SA,WA');
 insert into student values('024','1','Amelia Cooper','F','amelia.cooper@gmail.com',1112225678,'2002-04-12','789 Maple Lane,SA,WA'); 
 insert into student values('025','1','Daniel Ramirez','M','daniel.ramirez@gmail.com',1645556666,'1998-09-18','321 Elm Avenue,SA,WA');
 
-admin table.
+-- admin table.
+-- Admin values
+
+    /*ONLY FOR MYSQL:
+      To encrypt entered password values we use AES_ENCRYPT(pass_string, 'encrypted_key')
+      and change the password data type to BLOB
+      ALTER TABLE Admin MODIFY password BLOB;*/
+
+    -- INSERT INTO admin VALUES(1, 'Sai Trisha', 'admin1', AES_ENCRYPT('admin1', 'encryption_key'));
+    -- INSERT INTO admin VALUES(2, 'Sai Hemanth Narayan', 'admin2', AES_ENCRYPT('admin2', 'encryption_key'));
+    -- select *  from admin as a where CAST(AES_DECRYPT(a.password, 'encryption_key') as char)='admin1';
 
 INSERT INTO admin values(1,'Sai Trisha','admin1',aes_encrypt('admin1','encryption_key'));
 INSERT INTO admin values(2,'Hemanth Narayan','admin2',aes_encrypt('admin2','encryption_key'));
@@ -34,7 +44,7 @@ INSERT INTO admin values(3,'Sahya','admin3',aes_encrypt('admin3','encryption_key
 INSERT INTO admin values(4,'Toyesh','admin4',aes_encrypt('admin4','encryption_key'));
 INSERT INTO admin values(5,'Shivani','admin5',aes_encrypt('admin5','encryption_key'));
 
-Faculty.
+-- Faculty.
 
 INSERT INTO faculty(fid,aid,fname,position) VALUES
 ('101','1','Natalie Hughes','Professor'),
@@ -44,4 +54,15 @@ INSERT INTO faculty(fid,aid,fname,position) VALUES
 ('105','5','Chris Smith','Associate Professor');
 
 
+-- Course
 
+INSERT INTO course(cid, aid, cname, cfee, duration_in_weeks) VALUES('C01', '1', 'PPS in C Lang.', 1500, 12);
+INSERT INTO course VALUES('C02', '2', 'Data Structures', 4100, 20);
+INSERT INTO course VALUES('C03', '3', 'Discrete Mathematics', 3500, 12);
+INSERT INTO course VALUES('C04', '4', 'COA', 3000, 11);
+INSERT INTO course VALUES('C05', '5', 'OOPS', 2500, 6);
+INSERT INTO course VALUES('C06', '1', 'OS', 3000, 11);
+INSERT INTO course VALUES('C07', '2', 'DBMS', 3800, 13);
+INSERT INTO course VALUES('C08', '3', 'Algorithms', 4100, 20);
+INSERT INTO course VALUES('C09', '4', 'Prob. and Stats', 3000, 10);
+INSERT INTO course VALUES('C10', '5', 'Java', 3500, 15);
