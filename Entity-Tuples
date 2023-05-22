@@ -25,3 +25,11 @@ insert into student values('022','5','Grace Baker','F','garce.baker@gmail.com',1
 insert into student values('023','5','Henry Taylor','M','henry.taylor@gmail.com',1007774444,'1999-07-07','654 Oak Road,SA,WA');
 insert into student values('024','1','Amelia Cooper','F','amelia.cooper@gmail.com',1112225678,'2002-04-12','789 Maple Lane,SA,WA'); 
 insert into student values('025','1','Daniel Ramirez','M','daniel.ramirez@gmail.com',1645556666,'1998-09-18','321 Elm Avenue,SA,WA');
+
+admin table.
+
+INSERT INTO admin values(1,'Sai Trisha','admin1',aes_encrypt('admin1','encryption_key'));
+INSERT INTO admin values(2,'Hemanth Narayan','admin2',aes_encrypt('admin2','encryption_key'));
+INSERT INTO admin values(3,'Sahya','admin3',aes_encrypt('admin3','encryption_key'));
+INSERT INTO admin values(4,'Toyesh','admin4',aes_encrypt('admin4','encryption_key'));
+INSERT INTO admin values(5,'Shivani','admin5',aes_encrypt('admin5','encryption_key'));
