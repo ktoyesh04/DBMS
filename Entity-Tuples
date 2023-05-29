@@ -1,30 +1,57 @@
 -- Student table.
-
-insert into student(sid,aid,sname,gender,mail,phone,dob,address) values ('001','1','John Smith','M','john.smith@gmail.com',1234567890,'1998-5-10','123 Main street,SA,WA');
-insert into student values('002','1','Emily Johnson','F','emily.johnson@gmail.com',1234567889,'1999-09-15','456 Elm street SA,WA');
-insert into student values('003','1','Michael Davis','M','micahel.davis@gmail.com',1234567888,'1999-02-28','456 Oak street SA,WA'); 
-insert into student values('004','2','Sarah Thompson','F','sarah.thompson@gmail.com',1234367888,'2000-07-18','456 Pine street SA,WA');
-insert into student values('005','2','David Rodrigeuz','M','david.rodriguez@gmail.com',1234367431,'1998-11-03','321 Maple street SA,WA');
-insert into student values('006','2','Emma Anderson','F','emma.anderson@gmail.com',1778889999,'2001-03-25','321 ^Oakwood drive street SA,WA');
-insert into student values('007','2','James Wilson','M','james.wilson@gmail.com',1223334444,'1999-09-08','987  Cedar Lane street SA,WA');
-insert into student values('008','2','Olivia Martinez','F','olivia.martinez@gmail.com',1667778888,'2002-05-12','987  Elmwood Avenue  SA,WA');
-insert into student values('009','3','Benjamin lee','M','benjamin.lee@gmail.com',1998887777,'1997-12-01','987  oakdale Road  SA,WA');
-insert into student values('010','3','Sophia Nguyen','F','sophia.nguyen@gmail.com',1334445555,'2000-04-22','321 Elmwood Drive SA,WA');
-insert into student values('011','3','Ethan Wilson','M','ethan.wilson@gmail.com',1776665555,'1998-08-17','789 Pine street SA,WA');
-insert into student values('012','3','Mia Thompson','F','mia.thompson@gmail.com',1443332222,'2001-01-12','789 Maaple SA,WA');
-insert into student values('013','3','Noah Hernandez','M','noah.hernandez@gmail.com',1887774231,'1999-05-28','789 Cedar lane SA,WA');
-insert into student values('014','4','Ava Wilson','F','ava.wilson@gmail.com',1112223333,'2002-09-09','789 Elmwood drive SA,WA');
-insert into student values('015','4','Liam Garcia','M','liam.garcia@gmail.com',1445556666,'1998-06-05','321 Pine street,SA,WA');
-insert into student values('016','4','Isabella Adams','F','isabella.adams@gmail.com',1777889999,'2000-02-15','456 Oak Avenue,SA,WA');
-insert into student values('017','4','Jackson Martin','M','jackson.martin@gmail.com',1123334444,'1999-11-20','987 Maple Lane,SA,WA');
-insert into student values('018','4','Harper Roberts','F','harper.roberts@gmail.com',1667718888,'2001-08-08','654 cedar Aveneu,SA,WA');
-insert into student values('019','5','Oliver Walker','M','oliver.walker@gmail.com',1809997777,'1997-03-03','123 Oak Lane,SA,WA');
-insert into student values('020','5','William ','M','william.mitchell@gmail.com',1776663333,'1998-12-15','789 Elm Avenue,SA,WA');
-insert into student values('021','5','William Mitchell','M','william.mitchel@gmail.com',1776663334,'1998-12-15','789 Elm Avenue,SA,WA');
-insert into student values('022','5','Grace Baker','F','garce.baker@gmail.com',1432225555,'2001-05-25','321 Pine Lane,SA,WA');
-insert into student values('023','5','Henry Taylor','M','henry.taylor@gmail.com',1007774444,'1999-07-07','654 Oak Road,SA,WA');
-insert into student values('024','1','Amelia Cooper','F','amelia.cooper@gmail.com',1112225678,'2002-04-12','789 Maple Lane,SA,WA'); 
-insert into student values('025','1','Daniel Ramirez','M','daniel.ramirez@gmail.com',1645556666,'1998-09-18','321 Elm Avenue,SA,WA');
+    -mysql
+            insert into student(sid,aid,sname,gender,mail,phone,dob,address) values ('001','1','John Smith','M','john.smith@gmail.com',1234567890,'1998-5-10','123 Main street,SA,WA');
+            insert into student values('002','1','Emily Johnson','F','emily.johnson@gmail.com',1234567889,'1999-09-15','456 Elm street SA,WA');
+            insert into student values('003','1','Michael Davis','M','micahel.davis@gmail.com',1234567888,'1999-02-28','456 Oak street SA,WA'); 
+            insert into student values('004','2','Sarah Thompson','F','sarah.thompson@gmail.com',1234367888,'2000-07-18','456 Pine street SA,WA');
+            insert into student values('005','2','David Rodrigeuz','M','david.rodriguez@gmail.com',1234367431,'1998-11-03','321 Maple street SA,WA');
+            insert into student values('006','2','Emma Anderson','F','emma.anderson@gmail.com',1778889999,'2001-03-25','321 ^Oakwood drive street SA,WA');
+            insert into student values('007','2','James Wilson','M','james.wilson@gmail.com',1223334444,'1999-09-08','987  Cedar Lane street SA,WA');
+            insert into student values('008','2','Olivia Martinez','F','olivia.martinez@gmail.com',1667778888,'2002-05-12','987  Elmwood Avenue  SA,WA');
+            insert into student values('009','3','Benjamin lee','M','benjamin.lee@gmail.com',1998887777,'1997-12-01','987  oakdale Road  SA,WA');
+            insert into student values('010','3','Sophia Nguyen','F','sophia.nguyen@gmail.com',1334445555,'2000-04-22','321 Elmwood Drive SA,WA');
+            insert into student values('011','3','Ethan Wilson','M','ethan.wilson@gmail.com',1776665555,'1998-08-17','789 Pine street SA,WA');
+            insert into student values('012','3','Mia Thompson','F','mia.thompson@gmail.com',1443332222,'2001-01-12','789 Maaple SA,WA');
+            insert into student values('013','3','Noah Hernandez','M','noah.hernandez@gmail.com',1887774231,'1999-05-28','789 Cedar lane SA,WA');
+            insert into student values('014','4','Ava Wilson','F','ava.wilson@gmail.com',1112223333,'2002-09-09','789 Elmwood drive SA,WA');
+            insert into student values('015','4','Liam Garcia','M','liam.garcia@gmail.com',1445556666,'1998-06-05','321 Pine street,SA,WA');
+            insert into student values('016','4','Isabella Adams','F','isabella.adams@gmail.com',1777889999,'2000-02-15','456 Oak Avenue,SA,WA');
+            insert into student values('017','4','Jackson Martin','M','jackson.martin@gmail.com',1123334444,'1999-11-20','987 Maple Lane,SA,WA');
+            insert into student values('018','4','Harper Roberts','F','harper.roberts@gmail.com',1667718888,'2001-08-08','654 cedar Aveneu,SA,WA');
+            insert into student values('019','5','Oliver Walker','M','oliver.walker@gmail.com',1809997777,'1997-03-03','123 Oak Lane,SA,WA');
+            insert into student values('020','5','William ','M','william.mitchell@gmail.com',1776663333,'1998-12-15','789 Elm Avenue,SA,WA');
+            insert into student values('021','5','William Mitchell','M','william.mitchel@gmail.com',1776663334,'1998-12-15','789 Elm Avenue,SA,WA');
+            insert into student values('022','5','Grace Baker','F','garce.baker@gmail.com',1432225555,'2001-05-25','321 Pine Lane,SA,WA');
+            insert into student values('023','5','Henry Taylor','M','henry.taylor@gmail.com',1007774444,'1999-07-07','654 Oak Road,SA,WA');
+            insert into student values('024','1','Amelia Cooper','F','amelia.cooper@gmail.com',1112225678,'2002-04-12','789 Maple Lane,SA,WA'); 
+            insert into student values('025','1','Daniel Ramirez','M','daniel.ramirez@gmail.com',1645556666,'1998-09-18','321 Elm Avenue,SA,WA');
+     
+     -oracle date format changed
+            INSERT INTO Student VALUES('001', '1', 'John Smith', 'M', 'john.smith@gmail.com', 1234567890, '10-May-1998', '123 Main street,SA,WA');
+            INSERT INTO Student VALUES('002', '1', 'Emily Johnson', 'F', 'emily.johnson@gmail.com', 1234567889, '15-Sep-1999', '456 Elm street SA,WA');
+            INSERT INTO Student VALUES('003', '1', 'Michael Davis', 'M', 'micahel.davis@gmail.com', 1234567888, '28-Feb-1999', '456 Oak street SA,WA');
+            INSERT INTO Student VALUES('004', '2', 'Sarah Thompson', 'F', 'sarah.thompson@gmail.com', 1234367888, '18-Jul-2000', '456 Pine street SA,WA');
+            INSERT INTO Student VALUES('005', '2', 'David Rodrigeuz', 'M', 'david.rodriguez@gmail.com', 1234367431, '03-Nov-1998', '321 Maple street SA,WA');
+            INSERT INTO Student VALUES('006', '2', 'Emma Anderson', 'F', 'emma.anderson@gmail.com', 1778889999, '25-Mar-2001', 'Oakwood drive street SA,WA');
+            INSERT INTO Student VALUES('007', '2', 'James Wilson', 'M', 'james.wilson@gmail.com', 1223334444, '08-Sep-1999', '987  Cedar Lane street SA,WA');
+            INSERT INTO Student VALUES('008', '2', 'Olivia Martinez', 'F', 'olivia.martinez@gmail.com', 1667778888, '12-May-2002', '987  Elmwood Avenue  SA,WA');
+            INSERT INTO Student VALUES('009', '3', 'Benjamin lee', 'M', 'benjamin.lee@gmail.com', 1998887777, '01-Dec-1997', '987  oakdale Road  SA,WA');
+            INSERT INTO Student VALUES('010', '3', 'Sophia Nguyen', 'F', 'sophia.nguyen@gmail.com', 1334445555, '22-Apr-2000', '321 Elmwood Drive SA,WA');
+            INSERT INTO Student VALUES('011', '3', 'Ethan Wilson', 'M', 'ethan.wilson@gmail.com', 1776665555, '17-Aug-1998', '789 Pine street SA,WA');
+            INSERT INTO Student VALUES('012', '3', 'Mia Thompson', 'F', 'mia.thompson@gmail.com', 1443332222, '12-Jan-2001', '789 Maaple SA,WA');
+            INSERT INTO Student VALUES('013', '3', 'Noah Hernandez', 'M', 'noah.hernandez@gmail.com', 1887774231, '28-May-1999', '789 Cedar lane SA,WA');
+            INSERT INTO Student VALUES('014', '4', 'Ava Wilson', 'F', 'ava.wilson@gmail.com', 1112223333, '09-Sep-2002', '789 Elmwood drive SA,WA');
+            INSERT INTO Student VALUES('015', '4', 'Liam Garcia', 'M', 'liam.garcia@gmail.com', 1445556666, '05-Jun-1998', '321 Pine street,SA,WA');
+            INSERT INTO Student VALUES('016', '4', 'Isabella Adams', 'F', 'isabella.adams@gmail.com', 1777889999, '15-Feb-2000', '456 Oak Avenue,SA,WA');
+            INSERT INTO Student VALUES('017', '4', 'Jackson Martin', 'M', 'jackson.martin@gmail.com', 1123334444, '20-Nov-1999', '987 Maple Lane,SA,WA');
+            INSERT INTO Student VALUES('018', '4', 'Harper Roberts', 'F', 'harper.roberts@gmail.com', 1667718888, '08-Aug-2001', '654 cedar Aveneu,SA,WA');
+            INSERT INTO Student VALUES('019', '5', 'Oliver Walker', 'M', 'oliver.walker@gmail.com', 1809997777, '03-Mar-1997', '123 Oak Lane,SA,WA');
+            INSERT INTO Student VALUES('020', '5', 'William ', 'M', 'william.mitchell@gmail.com', 1776663333, '15-Dec-1998', '789 Elm Avenue,SA,WA');
+            INSERT INTO Student VALUES('021', '5', 'William Mitchell', 'M', 'william.mitchel@gmail.com', 1776663334, '15-Dec-1998', '789 Elm Avenue,SA,WA');
+            INSERT INTO Student VALUES('022', '5', 'Grace Baker', 'F', 'garce.baker@gmail.com', 1432225555, '25-May-2001', '321 Pine Lane,SA,WA');
+            INSERT INTO Student VALUES('023', '5', 'Henry Taylor', 'M', 'henry.taylor@gmail.com', 1007774444, '07-Jul-1999', '654 Oak Road,SA,WA');
+            INSERT INTO Student VALUES('024', '1', 'Amelia Cooper', 'F', 'amelia.cooper@gmail.com', 1112225678, '12-Apr-2002', '789 Maple Lane,SA,WA');
+            INSERT INTO Student VALUES('025', '1', 'Daniel Ramirez', 'M', 'daniel.ramirez@gmail.com', 1645556666, '18-Sep-1998', '321 Elm Avenue,SA,WA');
 
 -- admin table.
 -- Admin values
