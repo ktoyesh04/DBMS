@@ -38,11 +38,18 @@ insert into student values('025','1','Daniel Ramirez','M','daniel.ramirez@gmail.
     -- INSERT INTO admin VALUES(2, 'Sai Hemanth Narayan', 'admin2', AES_ENCRYPT('admin2', 'encryption_key'));
     -- select *  from admin as a where CAST(AES_DECRYPT(a.password, 'encryption_key') as char)='admin1';
 
-INSERT INTO admin values(1,'Sai Trisha','admin1',aes_encrypt('admin1','encryption_key'));
-INSERT INTO admin values(2,'Hemanth Narayan','admin2',aes_encrypt('admin2','encryption_key'));
-INSERT INTO admin values(3,'Sahya','admin3',aes_encrypt('admin3','encryption_key'));
-INSERT INTO admin values(4,'Toyesh','admin4',aes_encrypt('admin4','encryption_key'));
-INSERT INTO admin values(5,'Shivani','admin5',aes_encrypt('admin5','encryption_key'));
+        INSERT INTO admin values(1,'Sai Trisha','admin1',aes_encrypt('admin1','encryption_key'));
+        INSERT INTO admin values(2,'Hemanth Narayan','admin2',aes_encrypt('admin2','encryption_key'));
+        INSERT INTO admin values(3,'Sahya','admin3',aes_encrypt('admin3','encryption_key'));
+        INSERT INTO admin values(4,'Toyesh','admin4',aes_encrypt('admin4','encryption_key'));
+        INSERT INTO admin values(5,'Shivani','admin5',aes_encrypt('admin5','encryption_key'));
+        
+     -- ORACLE
+        INSERT INTO admin values(1,'Sai Trisha','admin1','admin1');
+        INSERT INTO admin values(2,'Hemanth Narayan','admin2','admin2');
+        INSERT INTO admin values(3,'Sahya','admin3','admin3');
+        INSERT INTO admin values(4,'Toyesh','admin4','admin4');
+        INSERT INTO admin values(5,'Shivani','admin5','admin5');
 
 -- Faculty.
 
